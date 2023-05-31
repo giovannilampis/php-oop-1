@@ -20,6 +20,16 @@
         public $length;
         public $language;
 
+        public function __construct($_director, $_producer, $_year, $_length, $_language)
+        {
+            $this->director = $_director;
+            $this->producer = $_producer;
+            $this->year = $_year;
+            $this->length = $_length;
+            $this->language = $_language;
+
+        }
+
     }
 
     ?>
