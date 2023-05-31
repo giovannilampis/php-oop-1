@@ -42,6 +42,11 @@
             $this->director = $valueDirector;
         }
 
+        public function watchMovie()
+        {
+            return "Start to watch the movie {$this->title} , filmed by the director {$this->director}";
+        }
+
     }
 
     ?>
