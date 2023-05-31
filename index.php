@@ -22,7 +22,7 @@
         public $language;
         public $genre;
 
-        public function __construct($_title, $_director, $_producer, $_year, $_length, $_language, $_genre)
+        public function __construct($_title, $_director, $_producer, $_year, $_length, $_language, Genre $_genre)
         {
             $this->title = $_title;
             $this->director = $_director;
