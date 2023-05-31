@@ -14,20 +14,32 @@
 
     class Movie
     {
+        public $title;
         public $director;
         public $producer;
         public $year;
         public $length;
         public $language;
 
-        public function __construct($_director, $_producer, $_year, $_length, $_language)
+        public function __construct($_title, $_director, $_producer, $_year, $_length, $_language)
         {
+            $this->title = $_title;
             $this->director = $_director;
             $this->producer = $_producer;
             $this->year = $_year;
             $this->length = $_length;
             $this->language = $_language;
 
+        }
+
+        public function setTitle($valueTitle)
+        {
+            $this->title = $valueTitle;
+        }
+
+        public function setDirector($valueDirector)
+        {
+            $this->director = $valueDirector;
         }
 
     }
