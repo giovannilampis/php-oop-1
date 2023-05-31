@@ -53,11 +53,14 @@
     
     $movieA = new Movie('Gone with the Wind', 'Victor Fleming', 'Metro Goldwyn Mayer', '1939', '238', 'english');
 
+    var_dump($movieA);
+
 
     // INSTANCE 1
     
     $movieB = new Movie('Who Framed Roger Rabbit', 'Robert Zemeckis', 'Touchstone Pictures', '1988', '', 'english');
 
+    var_dump($movieB);
 
     ?>
 
