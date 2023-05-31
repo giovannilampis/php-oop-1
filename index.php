@@ -20,9 +20,9 @@
         public $year;
         public $length;
         public $language;
-        public $genre;
+        public $genres;
 
-        public function __construct($_title, $_director, $_producer, $_year, $_length, $_language, Genre $_genre)
+        public function __construct($_title, $_director, $_producer, $_year, $_length, $_language, ...$_genres)
         {
             $this->title = $_title;
             $this->director = $_director;
@@ -30,7 +30,7 @@
             $this->year = $_year;
             $this->length = $_length;
             $this->language = $_language;
-            $this->genre = $_genre;
+            $this->genres = $_genres;
 
         }
 
