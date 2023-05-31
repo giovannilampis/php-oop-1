@@ -20,8 +20,9 @@
         public $year;
         public $length;
         public $language;
+        public $genre;
 
-        public function __construct($_title, $_director, $_producer, $_year, $_length, $_language)
+        public function __construct($_title, $_director, $_producer, $_year, $_length, $_language, $_genre)
         {
             $this->title = $_title;
             $this->director = $_director;
@@ -29,6 +30,7 @@
             $this->year = $_year;
             $this->length = $_length;
             $this->language = $_language;
+            $this->genre = $_genre;
 
         }
 
@@ -51,14 +53,14 @@
 
     // INSTANCE 1
     
-    $movieA = new Movie('Gone with the Wind', 'Victor Fleming', 'Metro Goldwyn Mayer', '1939', '238', 'english');
+    $movieA = new Movie('Gone with the Wind', 'Victor Fleming', 'Metro Goldwyn Mayer', '1939', '238', 'english', 'drama');
 
     var_dump($movieA);
 
 
     // INSTANCE 1
     
-    $movieB = new Movie('Who Framed Roger Rabbit', 'Robert Zemeckis', 'Touchstone Pictures', '1988', '104', 'english');
+    $movieB = new Movie('Who Framed Roger Rabbit', 'Robert Zemeckis', 'Touchstone Pictures', '1988', '104', 'english', 'cartoon');
 
     var_dump($movieB);
 
