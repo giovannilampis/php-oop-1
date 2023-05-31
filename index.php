@@ -57,12 +57,17 @@
 
     var_dump($movieA);
 
+    echo $movieA->watchMovie();
+
 
     // INSTANCE 1
     
     $movieB = new Movie('Who Framed Roger Rabbit', 'Robert Zemeckis', 'Touchstone Pictures', '1988', '104', 'english', 'cartoon');
 
     var_dump($movieB);
+
+    echo $movieB->watchMovie();
+
 
     ?>
 
