@@ -53,16 +53,20 @@
 
     // INSTANCE 1
     
-    $movieA = new Movie('Gone with the Wind', 'Victor Fleming', 'Metro Goldwyn Mayer', '1939', '238', 'english', 'drama');
+    $genresA = ['drama', 'romance', 'historical'];
+
+    $movieA = new Movie('Gone with the Wind', 'Victor Fleming', 'Metro Goldwyn Mayer', '1939', '238', 'english', $genresA);
 
     var_dump($movieA);
 
     echo $movieA->watchMovie();
 
 
-    // INSTANCE 1
+    // INSTANCE 2
     
-    $movieB = new Movie('Who Framed Roger Rabbit', 'Robert Zemeckis', 'Touchstone Pictures', '1988', '104', 'english', 'cartoon');
+    $genresB = ['cartoon', 'comedy', 'detective story', 'musical'];
+
+    $movieB = new Movie('Who Framed Roger Rabbit', 'Robert Zemeckis', 'Touchstone Pictures', '1988', '104', 'english', $genresB);
 
     var_dump($movieB);
 
