@@ -10,6 +10,20 @@
 
 <body>
 
+    <?php
+
+    class Movie
+    {
+        public $director;
+        public $producer;
+        public $year;
+        public $length;
+        public $language;
+
+    }
+
+    ?>
+
 </body>
 
 </html>
